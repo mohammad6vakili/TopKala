@@ -5,7 +5,7 @@ Website: [https://topkala.shop](https://topkala.shop)
 
 ## About
 
-topKala is Shopping wordpress theme that developed by an Iranian team called MP Team.
+topKala is a Shopping wordpress theme that developed by an Iranian team called MP Team.
 With wonderfull ui design and powerfull functionallity 
 
 ## License
