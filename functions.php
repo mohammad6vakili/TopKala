@@ -1,4 +1,11 @@
 <?php
+
+    function topKala_theme_support(){
+        // Add dynamic title tag support
+        add_theme_support('title-tag');
+    }
+    add_action('after_setup_theme','topKala_theme_support');
+
     function topKala_register_styles(){
         $version=wp_get_theme()->get('Version');
         wp_enqueue_style('topkala-style',get_template_directory_uri()."/style.css",array(),$version,'all');
