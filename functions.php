@@ -6,6 +6,15 @@
     }
     add_action('after_setup_theme','topKala_theme_support');
 
+    function topKala_menus(){
+        $locations = array(
+            'primary'=>"Mega Menu",
+            'footer'=>"Footer Mega Menu"
+        )
+        register_nav_menus($locations);
+    }
+    add_action('init','topKala_menus');
+
     function topKala_register_styles(){
         $version=wp_get_theme()->get('Version');
         wp_enqueue_style('topkala-style',get_template_directory_uri()."/style.css",array(),$version,'all');
