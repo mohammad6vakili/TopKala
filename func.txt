@@ -1,0 +1,2 @@
+1 - <?php echo   get_bloginfo('name'); ?> ::: page title
+2- 

@@ -3,14 +3,16 @@
     function topKala_theme_support(){
         // Add dynamic title tag support
         add_theme_support('title-tag');
+        add_theme_support('custom-logo');
+        add_theme_support('post-thumbnails');
     }
     add_action('after_setup_theme','topKala_theme_support');
 
     function topKala_menus(){
         $locations = array(
-            'primary'=>"Mega Menu",
-            'footer'=>"Footer Mega Menu"
-        )
+            'primary'=>"primary",
+            'footer'=>"footer"
+        );
         register_nav_menus($locations);
     }
     add_action('init','topKala_menus');
